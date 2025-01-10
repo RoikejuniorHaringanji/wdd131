@@ -246,8 +246,8 @@
     }
   
     .profile-photo {
-      max-width: 80px;
-      height: 100px;
+      max-width: 160px;
+      height: 200px;
       margin: 0 auto 1rem;
       overflow: hidden; /* Ensure any overflow is hidden */
     }
@@ -277,9 +277,4 @@
     h1 {
       font-size: 2rem;
     }
-  
-    nav {
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-  }
+}
