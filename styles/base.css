@@ -108,19 +108,19 @@
   }
   
   .profile-photo {
-    width: 50px; /* Smaller width */
-    height: 60px; /* Smaller height */
-    border-radius: 0.25rem; /* Rounded corners */
-    margin-top: 1rem; /* Space at the top */
-    overflow: hidden; /* Hide overflow for rounded corners */
-}
-
-.profile-photo-img {
-    width: 100%; /* Ensures the image fills the container */
-    height: 100%; /* Ensures the image fills the container */
-    object-fit: cover; /* Maintain aspect ratio and cover container */
-    object-position: center; /* Center the image within the container */
-}
+    width: 80px;
+    height: 100px;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+  
+  .profile-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
   
   .about-section {
     margin-bottom: 1rem; /* Adjust the margin as needed to reduce the gap */
@@ -253,8 +253,8 @@
     }
     
     .profile-photo img {
-      width: 30%;
-      height: 50%;
+      width: 100%;
+      height: 100%;
       object-fit: cover; /* Ensure the image covers the container without distortion */
       object-position: center; /* Center the image within the container */
     }
