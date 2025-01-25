@@ -108,8 +108,8 @@ h3 {
 }
 
 .profile-photo {
-  width: 80px;
-  height: 100px;
+  width: 160px;
+  height: 200px;
   border-radius: 0.25rem;
   margin-top: 1rem;
   overflow: hidden;
@@ -153,7 +153,7 @@ h3 {
   gap: 1rem;
 }
 
-.flag-container {
+.picture-container {
   flex: 0 0 150px;
 }
 
@@ -161,15 +161,15 @@ h3 {
   flex: 1;
 }
 
-.flag-img {
-  width: 150px;
-  height: 100px;
+.picture-img {
+  width: 200px;
+  height: 150px;
   object-fit: cover;
   object-position: center;
   border: 1px solid #e2e8f0;
 }
 
-.flag-caption {
+.picture-caption {
   font-size: 0.875rem;
   color: #181a1f;
   text-align: center;
@@ -272,14 +272,8 @@ footer span {
     margin: 0 auto 1rem;
   }
  }
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 0.75rem;
-    }
-  }
+ @media (max-width:768px) {
+ h1 {
+  font-size: 2rem;
+ }
+ }
