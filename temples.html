@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Temple Album - A collection of LDS temples from around the world">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Learn the basics of dynamic web development with Haringanji Roike. Explore resources, projects, and more.">
     <meta name="author" content="Haringanji Roike">
     <title>Temple Album</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="scripts/temples.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Temple Album</h1>
-        <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-        <nav id="main-nav">
+        <button id="hamburger">☰</button>
+        <nav id="navMenu" class="nav-menu">
             <a href="#">Home</a>
             <a href="#">Old</a>
             <a href="#">New</a>
             <a href="#">Large</a>
             <a href="#">Small</a>
         </nav>
-    </header>
-
+    </header>    
     <main>
-        <section>
-            <h2>Home</h2>
-        </section>
+        <h2>Temble gallery</h2>
         <section class="gallery">
             <figure>
                 <img src="images/Sandaigocailifoinia.jpg" alt="San Diego California Temple">
@@ -73,8 +74,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 🌸 Haringanji Roike 🌸 Uganda</p>
-        <p>Last Modification: 01/10/2025 06:1:33</p>
+        <p>© <span id="currentyear"></span>| Haringanji Roike | Kampala, Uganda</p>
+        <p id="lastModified" class="header-highlight">Last Modified: <span id="last-modified-date"></span></p>
     </footer>
 </body>
+
 </html>
