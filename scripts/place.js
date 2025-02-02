@@ -1,46 +1,35 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Update current year and last modified date
-    document.getElementById('currentyear').textContent = new Date().getFullYear();
-    document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+// Update the current year dynamically in the footer
+const currentYearElement = document.getElementById("currentyear");
+if (currentYearElement) {
+    currentYearElement.textContent = new Date().getFullYear();
+}
 
-    // WeatherAPI key and endpoint for Kampala, Uganda
-    const apiKey = '9dfb5278a16149a489a143449241111';
-    const city = 'Kampala';
-    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
-
-    // Fetch weather data
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-            const temperature = data.current.temp_c;
-            const conditions = data.current.condition.text;
-            const windSpeed = data.current.wind_kph;
-
-            // Display temperature, conditions, and wind speed
-            document.getElementById('temp').textContent = `${temperature}°C`;
-            document.getElementById('conditions').textContent = conditions;
-            document.getElementById('wind-speed').textContent = `${windSpeed} km/h`;
-
-            // Calculate and display wind chill
-            const windChill = calculateWindChill(temperature, windSpeed);
-            document.getElementById('wind-chill').textContent = windChill;
-        })
-        .catch(error => console.error('Error fetching weather data:', error));
-
-    // Wind chill calculation
-    function calculateWindChill(temp, speed) {
-        // Convert wind speed from km/h to m/s for accurate calculation
-        const speedInMps = speed / 3.6;
-        if (temp <= 10 && speedInMps > 1.34) { // Equivalent to 4.8 km/h
-            return (13.12 + 0.6215 * temp - 11.37 * Math.pow(speedInMps, 0.16) + 0.3965 * temp * Math.pow(speedInMps, 0.16)).toFixed(1) + '°C';
-        } else {
-            return 'N/A';
-        }
+// Update the "last modified" date dynamically in the footer
+const lastModifiedElement = document.getElementById("last-modified-date");
+if (lastModifiedElement) {
+    lastModifiedElement.textContent = document.lastModified;
+}
+function calculateWindChill(temperature, windSpeed) {
+    if (temperature <= 10 && windSpeed > 4.8) {
+        return (13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16)).toFixed(1) + ' °C';
+    } else {
+        return 'N/A';
     }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const temperature = 10; // static value in °C
+    const windSpeed = 5; // static value in km/h
+    const windChill = calculateWindChill(temperature, windSpeed);
+    document.getElementById('windChill').textContent = windChill;
 });
+// Get the hamburger button and the navigation menu
+const hamburgerButton = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
 
-// Update copyright year
-document.getElementById('currentyear').textContent = new Date().getFullYear();
-
-// Update last modified date
-document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+// Add click event listener to toggle the menu
+if (hamburgerButton && navMenu) {
+    hamburgerButton.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+    });
+}
