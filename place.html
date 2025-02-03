@@ -28,7 +28,7 @@
        
         <div class="hero">
             <picture>
-                <source srcset="images/kampala-1.webp">
+                <source srcset="images/kampala-1.webp" type="image/webp">
                 <img src="images/Kampala-1.webp" alt="Kampala, Uganda">
             </picture>
         </div>
@@ -74,13 +74,11 @@
                 <p class="value">.ug</p>
             </div>
         </div>
-        <div class="weather">
-            <h2 class="weather-h2">Weather</h2>
-            <img class="weather-icon" src="images/weather-i.png" alt="Weather Icon">
-            <div class="data-item">
-                <p class="label">Temperature:</p>
-                <p class="value">20&deg;C to 30&deg;C</p>
-            </div>
+        <picture>
+            <source srcset="images/icon-sun.svg" type="image/svg+xml">
+            <source srcset="images/icon-sun.webp" type="image/webp">
+            <img class="weather-icon" src="images/icon-sun.webp" alt="Weather Icon">
+          </picture>
             <div class="data-item">
                 <p class="label">Conditions:</p>
                 <p class="value">Partly Cloudy</p>
