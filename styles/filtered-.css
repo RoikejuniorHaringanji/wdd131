@@ -7,8 +7,8 @@ body {
 }
 
 header {
-    background-color: #4caf50;
-    color: rgb(6, 0, 0);
+    background-color: #e0bfbf;
+    color: rgb(51, 6, 6);
     padding: 1rem;
     text-align: center;
 }
@@ -18,7 +18,7 @@ nav id {
     justify-content:flex-end;
     align-items: center;
     padding: 0.5rem 1rem;
-    background-color: #56a858;
+    background-color: #02010f;
 }
 
 .nav-menu {
@@ -31,7 +31,7 @@ nav id {
 
 .nav-menu a {
     text-decoration: none;
-    color: rgb(11, 1, 1);
+    color: rgb(16, 148, 109);
     font-weight: bold;
     padding: 0.5rem 1rem; 
     border-radius: 4px; 
@@ -39,14 +39,14 @@ nav id {
 }
 
 .nav-menu a:hover {
-    background-color: #56a858;
+    background-color: #d4a7eb;
 }
    
 #hamburger {
     font-size: 1.5rem;
     background: none;
     border: none;
-    color: #00070c;
+    color: #0b151d;
     cursor: pointer;
     outline: none;
     display: none; 
@@ -57,12 +57,12 @@ nav id {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .nav-menu a {
     text-decoration: none;
-    color: rgb(7, 1, 1);
+    color: rgb(7, 4, 4);
     font-weight: bold;
 }
 
@@ -96,10 +96,31 @@ nav id {
 figure {
     text-align: center;
 }
+#temple-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.temple-card {
+    background: rgb(55, 51, 88);
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.temple-card img {
+    width: 100%;
+    border-radius: 8px;
+}
 
 footer {
-    background-color: #9bec9f;
-    color: rgb(14, 0, 0);
+    background-color: #24272c;
+    color: rgb(248, 247, 247);
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
