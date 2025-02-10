@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product Review Form</title>
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="js/script.js"></script>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="form-card">
+			<h1>Product Review</h1>
+			
+			<form id="reviewForm" method="get" action="review.html">
+				<!-- Product Selection -->
+				<div class="form-group">
+					<label for="product">Product Name *</label>
+					<select id="product" name="product" required>
+						<option value="" disabled selected>Select a Product...</option>
+					</select>
+				</div>
+
+				<!-- Rating -->
+				<div class="form-group">
+					<label>Overall Rating *</label>
+					<div class="rating">
+						<div class="stars">
+							<input type="radio" id="star5" name="rating" value="5" required>
+							<label for="star5">☆</label>
+							<input type="radio" id="star4" name="rating" value="4">
+							<label for="star4">☆</label>
+							<input type="radio" id="star3" name="rating" value="3">
+							<label for="star3">☆</label>
+							<input type="radio" id="star2" name="rating" value="2">
+							<label for="star2">☆</label>
+							<input type="radio" id="star1" name="rating" value="1">
+							<label for="star1">☆</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Installation Date -->
+				<div class="form-group">
+					<label for="installDate">Date of Installation </label>
+					<input type="date" id="installDate" name="installDate" required>
+				</div>
+
+				<!-- Useful Features -->
+				<div class="form-group">
+					<label>Useful Features</label>
+					<div class="features-grid" id="featuresContainer">
+						<!-- Features will be populated by JavaScript -->
+					</div>
+				</div>
+
+				<!-- Written Review -->
+				<div class="form-group">
+					<label for="review">Written Review</label>
+					<textarea id="review" name="review" rows="4" 
+						placeholder="Share your experience with this product..."></textarea>
+				</div>
+
+				<!-- User Name -->
+				<div class="form-group">
+					<label for="userName">Your Name</label>
+					<input type="text" id="userName" name="userName">
+				</div>
+
+				<!-- Submit Button -->
+				<button type="submit" class="submit-btn">Submit Review</button>
+			</form>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<p>&copy; 2025 Product Review System. All rights reserved.</p>
+		</footer>
+	</div>
+
+	<!-- Update the footer section in your form.html -->
+<footer>
+    <p>©2024 <span class="flower">✿</span> Rubia Magdelena Francesco <span class="flower">✿</span></p>
+    <p>Madagascar</p>
+    <p class="last-modified">Last Modification: 02/26/2024 13:56:10</p>
+</footer>
+</body>
+</html>
