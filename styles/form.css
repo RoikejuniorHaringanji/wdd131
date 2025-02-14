@@ -1,0 +1,190 @@
+/* Reset and base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f7f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: white;
+    background: #115511; /* Darker green for better contrast */
+    margin: -2rem -2rem 2rem -2rem;
+    padding: 1.5rem;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #115511; /* Darker green for better contrast */
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #115511;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #115511;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(17, 85, 17, 0.2);
+}
+
+/* Rating stars */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #999;
+    cursor: pointer;
+}
+
+.rating input[type="radio"]:checked ~ label {
+    color: #115511;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #115511;
+}
+
+/* Checkbox group */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid #115511;
+}
+
+.checkbox-item label {
+    margin: 0;
+    font-weight: normal;
+    color: #333;
+}
+
+/* Optional text */
+.optional {
+    color: #555;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #115511;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0a330a;
+}
+
+/* Review confirmation page */
+.review-confirmation {
+    text-align: center;
+    padding: 2rem;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #115511;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #0a330a;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #115511;
+    color: white;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    h1 {
+        margin: -1rem -1rem 1rem -1rem;
+        padding: 1rem;
+    }
+
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+}
