@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Nature Traits & Hiking Adventure. Plan your next outdoor experience, ask questions, or book a guided hiking tour.">
+    <meta name="author" content="Roike Haringanji">
+    <title>Contact Us | Nature Traits & Hiking Adventure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="favicon" href="images/favicons.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+        <button id="hamburger">☰</button>
+        <div id="navMenu" class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="traits.html">Traits</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us | Nature Traits & Hiking Adventure</h1>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Send Us a Message</h2>
+        <p>Fill out the form below, and our team will get back to you as soon as possible.</p>
+        <a href="about-us.html" class="cta-button">Discover More</a>
+    </div>
+</section>
+
+<!-- Booking Form Section -->
+<section id="booking">
+    <h2>Book Your Nature Escape</h2>
+    <p>Secure your spot for an adrenaline-fueled rafting adventure or an immersive hiking experience. Fill out the form below to begin your journey into the wild.</p>
+    <form id="booking-form">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" required>
+
+        <label for="trip">Choose Your Adventure:</label>
+        <select id="trip" name="trip">
+            <option value="Choose a Trip" selected disabled>Select Your Outdoor Experience</option>  
+            <option value="River Rush">River Rush – Whitewater Thrills & Scenic Views</option>
+            <option value="Extreme Rapids">Extreme Rapids – For the Bold & Fearless</option>
+            <option value="Forest Trail Hike">Forest Trail Hike – Explore Hidden Waterfalls & Wildlife</option>
+            <option value="Summit Trek">Summit Trek – Conquer the Peaks & Witness the Sunrise</option>
+        </select>
+
+        <label for="date">Select Your Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="requests">Special Requests / Hiking or Rafting Preferences:</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="Tell us about your adventure goals!"></textarea>
+
+        <button type="submit">Start Your Adventure</button>
+    </form>
+</section>
+
+<!-- Contact Info Section -->
+<section id="contact-info">
+    <h2>Stay Connected with Nature</h2>
+    <p><strong>Location:</strong> Deep in Uganda’s Adventure Belt – Where rivers and trails unite.</p>
+    <p><strong>Call Us:</strong> +256 77456-7890</p>
+    <p><strong>Email:</strong> info@naturaltraitandhikingadventures.com</p>
+    <a href="https://wa.me/+256756260851" class="whatsapp-button">📱 Chat with Us on WhatsApp</a>
+
+</section>
+
+
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <p>Contact us: <a href="mailto:info@naturaltraitandhikingadventures.com">info@naturaltraitandhikingadventures.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Explore the wild beauty of Uganda</p>
+            <p>Fax: (123)-758987654</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" loading="lazy">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter.svg" alt="Twitter" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram" loading="lazy">
+            </a>
+        </div>
+        <div class="footer-links">
+            <h3>ADVENTURE LINKS</h3>
+            <a href="gallery.html">Adventure Gallery</a>
+            <a href="Traits.html">Nature Traits</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <p><a href="references.html">Explore More</a></p>
+        
+        <script src="scripts/contact.js" defer></script>
+    </footer>
